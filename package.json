@@ -9,6 +9,8 @@
 		"shell",
 		"script",
 		"nodejs",
+		"string",
+		"replace",
 		"replacer"
 	],
 	"homepage": "https://github.com/kokiito0926/replacer#readme",
