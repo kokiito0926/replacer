@@ -1,6 +1,6 @@
 {
 	"name": "@kokiito0926/replacer",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"private": false,
 	"description": "リプレイサー（replacer）を用いると、かんたんに文字列を置換することができます。",
 	"keywords": [
