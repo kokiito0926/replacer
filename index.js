@@ -1,11 +1,9 @@
 #!/usr/bin/env node
 
-// >> $ ./index.js "Hello, world!" --search "H" --replace "P"
+// >> $ sed -i 's/!/！/g' $1;
 // >> $ echo "Hello, world!" | ./index.js --search "H" --replace "P"
 
-// >> $ sed -i 's/!/！/g' $1;
-
-import { $, fs, path, minimist, stdin } from "zx";
+import { minimist, stdin } from "zx";
 
 const argv = minimist(process.argv.slice(2), {
 	string: ["search", "replace"],
@@ -25,9 +23,6 @@ let target = "";
 if (!process.stdin.isTTY) {
 	target = await stdin();
 }
-// else {
-// 	target = argv._[0];
-// }
 // console.log(target);
 
 if (!target) {
