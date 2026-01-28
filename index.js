@@ -24,9 +24,10 @@ if (!search || !replace) {
 let target = "";
 if (!process.stdin.isTTY) {
 	target = await stdin();
-} else {
-	target = argv._[0];
 }
+// else {
+// 	target = argv._[0];
+// }
 // console.log(target);
 
 if (!target) {

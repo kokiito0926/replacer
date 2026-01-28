@@ -12,7 +12,6 @@ $ npm install --global @kokiito0926/replacer
 ## 実行方法
 
 ```bash
-$ replacer "Hello, world!" --search "H" --replace "P"
 $ echo "Hello, world!" | replacer --search "H" --replace "P"
 ```
 
