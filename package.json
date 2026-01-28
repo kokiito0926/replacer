@@ -1,0 +1,40 @@
+{
+	"name": "@kokiito0926/replacer",
+	"version": "0.0.0",
+	"private": false,
+	"description": "リプレイサー（replacer）を用いると、かんたんに文字列を置換することができます。",
+	"keywords": [
+		"cli",
+		"bash",
+		"shell",
+		"script",
+		"nodejs",
+		"replacer"
+	],
+	"homepage": "https://github.com/kokiito0926/replacer#readme",
+	"publishConfig": {
+		"access": "public"
+	},
+	"bin": {
+		"replacer": "index.js"
+	},
+	"bugs": {
+		"url": "https://github.com/kokiito0926/replacer/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kokiito0926/replacer.git"
+	},
+	"license": "MIT",
+	"author": "Koki Ito <kokiito0926@gmail.com>",
+	"type": "module",
+	"scripts": {
+		"test": "node --test"
+	},
+	"dependencies": {
+		"zx": "^8.8.4"
+	},
+	"engines": {
+		"node": ">=24.0.0"
+	}
+}
