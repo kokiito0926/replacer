@@ -1,7 +1,7 @@
-## リプレイサー（replacer）
+## replacer
 
-リプレイサー（replacer）を用いると、かんたんに文字列を置換することができます。  
-正規表現を書かずに済むので、直感的に文字列を置換することができるので便利なのかもしれません。
+replacerは、標準入力から受け取ったテキストに置換処理をおこなうことができるコマンドラインのツールです。  
+正規表現を書かずに済むので、直感的にテキストを置換することができるようになります。
 
 ## インストール
 
@@ -9,10 +9,10 @@
 $ npm install --global @kokiito0926/replacer
 ```
 
-## 実行方法
+## 使用方法
 
 ```bash
-$ echo "Hello, world!" | replacer --search "H" --replace "P"
+$ echo "Hello, world!" | replacer --search "Hello" --replace "Hi"
 ```
 
 ## ライセンス
