@@ -1,6 +1,6 @@
 {
 	"name": "@kokiito0926/replacer",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"private": false,
 	"description": "標準入力から受け取ったテキストに置換処理をおこなうことができるコマンドラインのツールです。",
 	"keywords": [
