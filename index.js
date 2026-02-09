@@ -13,18 +13,18 @@ if (!search || !replace) {
 // console.log(search);
 // console.log(replace);
 
-let target = "";
-if (!process.stdin.isTTY) {
-	target = await stdin();
+if (process.stdin.isTTY) {
+	process.exit(1);
 }
-// console.log(target);
 
+const target = await stdin();
 if (!target) {
 	process.exit(1);
 }
+// console.log(target);
 
 const regExp = new RegExp(search, "g");
 // const regExp = new RegExp(`/${search}/g`);
 
-target = target.replace(regExp, replace);
-console.log(target);
+const output = target.replace(regExp, replace);
+console.log(output);
