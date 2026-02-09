@@ -8,7 +8,6 @@ import { argv, stdin } from "zx";
 const search = argv?.["search"];
 const replace = argv?.["replace"];
 if (!search || !replace) {
-	console.error("Error: search and replace strings are required.");
 	process.exit(1);
 }
 // console.log(search);
@@ -21,7 +20,6 @@ if (!process.stdin.isTTY) {
 // console.log(target);
 
 if (!target) {
-	console.error("Error: no input content provided.");
 	process.exit(1);
 }
 
